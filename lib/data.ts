@@ -2,7 +2,7 @@ export const personal = {
   name: "Hamidur Rashid",
   title: "Front-End Engineer",
   specialization: "Next.js & React Specialist",
-  profileUrl: "/assets/profile.svg",
+  profileUrl: "/assets/profile.png",
   location: "Bangladesh 🇧🇩",
   email: "Hamidmonju1@gmail.com",
   phone: "+8801867707517",
@@ -20,6 +20,7 @@ export const personal = {
 export const projects = [
   {
     id: 1,
+    slug: "finflow",
     title: "FinFlow",
     subtitle: "Financial Dashboard",
     description:
@@ -33,6 +34,7 @@ export const projects = [
   },
   {
     id: 2,
+    slug: "chatting-application",
     title: "Chatting Application",
     subtitle: "Real-time Chat App",
     description:
@@ -46,6 +48,7 @@ export const projects = [
   },
   {
     id: 3,
+    slug: "crud-application",
     title: "CRUD Application",
     subtitle: "Data Management",
     description:
@@ -59,6 +62,7 @@ export const projects = [
   },
   {
     id: 4,
+    slug: "figma-pixel-perfect-agency",
     title: "Figma → Pixel Perfect",
     subtitle: "Agency Website",
     description:
@@ -72,6 +76,7 @@ export const projects = [
   },
   {
     id: 5,
+    slug: "agency-portfolio",
     title: "Agency Portfolio",
     subtitle: "Responsive Website",
     description:

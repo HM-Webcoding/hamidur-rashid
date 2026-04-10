@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import { skillCategories } from '@/lib/data'
+import { skillCategories } from "@/lib/data";
 
 export default function Skills() {
   return (
@@ -43,7 +43,12 @@ export default function Skills() {
             {/* Icon grid */}
             <div className="flex flex-wrap gap-4">
               {cat.skills.map((skill) => (
-                <SkillTile key={skill.name} name={skill.name} icon={skill.icon} color={cat.color} />
+                <SkillTile
+                  key={skill.name}
+                  name={skill.name}
+                  icon={skill.icon}
+                  color={cat.color}
+                />
               ))}
             </div>
           </div>
@@ -58,40 +63,52 @@ export default function Skills() {
         <div>
           <h4 className="font-black text-base mb-0.5">Currently Exploring</h4>
           <p className="text-base text-[hsl(var(--muted-foreground))]">
-            Mastering Full-Stack Engineering — diving deep into backend architecture, REST APIs, and databases to become a complete developer.
+            Exploring System Design, AI, and DevOps in depth to design scalable
+            architectures, deploy reliable systems, and build intelligent
+            applications.
           </p>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-function SkillTile({ name, icon, color }: { name: string; icon: string; color: string }) {
+function SkillTile({
+  name,
+  icon,
+  color,
+}: {
+  name: string;
+  icon: string;
+  color: string;
+}) {
   return (
-    <div
-      className="skill-icon-wrap flex flex-col items-center gap-2 p-4 rounded-2xl border border-[hsl(var(--border))] bg-[hsl(var(--card))] cursor-default w-[88px]"
-    >
+    <div className="skill-icon-wrap flex flex-col items-center gap-2 p-4 rounded-2xl border border-[hsl(var(--border))] bg-[hsl(var(--card))] cursor-default w-[88px]">
       {/* Icon */}
       <div
         className="w-12 h-12 rounded-xl flex items-center justify-center p-2.5"
-        style={{ background: `color-mix(in srgb, ${color} 10%, hsl(var(--muted)))` }}
+        style={{
+          background: `color-mix(in srgb, ${color} 10%, hsl(var(--muted)))`,
+        }}
       >
         <img
           src={icon}
           alt={name}
           className="w-full h-full object-contain"
           onError={(e) => {
-            const t = e.target as HTMLImageElement
-            t.style.display = 'none'
-            const p = t.parentElement
+            const t = e.target as HTMLImageElement;
+            t.style.display = "none";
+            const p = t.parentElement;
             if (p) {
-              p.innerHTML = `<span style="font-size:10px;font-weight:700;color:${color}">${name.slice(0, 2).toUpperCase()}</span>`
+              p.innerHTML = `<span style="font-size:10px;font-weight:700;color:${color}">${name.slice(0, 2).toUpperCase()}</span>`;
             }
           }}
         />
       </div>
       {/* Label */}
-      <span className="text-[10px] font-semibold text-center text-[hsl(var(--muted-foreground))] leading-tight">{name}</span>
+      <span className="text-[10px] font-semibold text-center text-[hsl(var(--muted-foreground))] leading-tight">
+        {name}
+      </span>
     </div>
-  )
+  );
 }

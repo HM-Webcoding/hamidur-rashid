@@ -50,7 +50,7 @@ export default function RootLayout({
                 className="flex-1 min-h-screen"
                 style={{
                   marginLeft: "calc(var(--sidebar-w) + 40px);",
-                  marginRight: "calc(var(--rightnav-w) + 60px)",
+                  marginRight: "calc(var(--rightnav-w) + 56px)",
                 }}
               >
                 {children}
@@ -58,7 +58,7 @@ export default function RootLayout({
 
               {/* Right nav — fixed icon nav */}
               <aside
-                className="fixed top-2/4 transform -translate-y-2/4 right-0 z-40 "
+                className="fixed top-2/4 transform -translate-y-2/4 right-10 z-40"
                 style={{ width: "var(--rightnav-w)" }}
               >
                 <RightNav />

@@ -113,7 +113,7 @@ export default function RightNav({ mobile = false }: { mobile?: boolean }) {
 
   /* Desktop right nav */
   return (
-    <div className="w-full h-full flex flex-col items-center justify-between py-6 px-3 border-l border-[hsl(var(--border))] bg-[hsl(var(--card))]/60 backdrop-blur-xl">
+    <div className="w-full h-full flex flex-col items-center justify-between py-6 px-3 border border-[hsl(var(--border))] bg-[hsl(var(--card))]/60 backdrop-blur-xl rounded-[50px]">
       {/* Nav items */}
       <nav className="flex flex-col items-center gap-2">
         {navItems.map((item) => {

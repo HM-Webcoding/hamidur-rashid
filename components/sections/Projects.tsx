@@ -142,6 +142,50 @@ function ProjectCard({
         >
           {String(index + 2).padStart(2, "0")}
         </div>
+        <div className="flex gap-2 mt-4">
+          {project.codeLink !== "#" && (
+            // <Button variant="outline" size="sm" asChild>
+            //   <a
+            //     href={project.codeLink}
+            //     target="_blank"
+            //     rel="noopener noreferrer"
+            //     className="gap-2"
+            //   >
+            //     <Github size={14} /> Code
+            //   </a>
+            // </Button>
+
+            <a
+              href={project.codeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-8 h-8 rounded-lg border border-[hsl(var(--border))] flex items-center justify-center  text-[hsl(var(--foreground))] hover:bg-[hsl(var(--muted))] transition-all hover:text-[hsl(var(--grad-from))] bg-[hsl(var(--muted-foreground))]"
+            >
+              <Github size={13} />
+            </a>
+          )}
+          {project.liveLink !== "#" && (
+            // <Button size="sm" asChild>
+            //   <a
+            //     href={`/${project.slug}`}
+            //     target="_blank"
+            //     rel="noopener noreferrer"
+            //     className="gap-2"
+            //   >
+            //     <ExternalLink size={14} /> Live Demo
+            //   </a>
+            // </Button>
+
+            <a
+              href={project.liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-8 h-8 rounded-lg border border-[hsl(var(--border))] flex items-center justify-center text-[hsl(var(--foreground))] bg-[hsl(var(--muted))] transition-all"
+            >
+              <ExternalLink size={13} />
+            </a>
+          )}
+        </div>
       </div>
 
       <div>
@@ -171,50 +215,6 @@ function ProjectCard({
             {t}
           </span>
         ))}
-      </div>
-
-      <div className="flex gap-2 mt-4">
-        {project.codeLink !== "#" && (
-          <Button variant="outline" size="sm" asChild>
-            <a
-              href={project.codeLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="gap-2"
-            >
-              <Github size={14} /> Code
-            </a>
-          </Button>
-
-          // <a
-          //   href={project.codeLink}
-          //   target="_blank"
-          //   rel="noopener noreferrer"
-          //   className="w-8 h-8 rounded-lg border border-[hsl(var(--border))] flex items-center justify-center text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--foreground))] hover:bg-[hsl(var(--muted))] transition-all"
-          // >
-          //   <Github size={13} />
-          // </a>
-        )}
-        {project.liveLink !== "#" && (
-          <Button size="sm" asChild>
-            <a
-              href={project.liveLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="gap-2"
-            >
-              <ExternalLink size={14} /> Live Demo
-            </a>
-          </Button>
-          // <a
-          //   href={project.liveLink}
-          //   target="_blank"
-          //   rel="noopener noreferrer"
-          //   className="w-8 h-8 rounded-lg border border-[hsl(var(--border))] flex items-center justify-center text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--foreground))] hover:bg-[hsl(var(--muted))] transition-all"
-          // >
-          //   <ExternalLink size={13} />
-          // </a>
-        )}
       </div>
     </div>
   );
