@@ -34,6 +34,20 @@ export const projects = [
   },
   {
     id: 2,
+    slug: "online-assessment-platform",
+    title: "Online Assessment Platform",
+    subtitle: "Educational Tool",
+    description:
+      "A scalable online exam system built with Next.js and TypeScript, featuring dynamic question types (MCQ, Text, Mixed), role-based validation, and a seamless experience for both admins and candidates.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "React Hook Form", "Zod"],
+    liveLink: "https://online-assessment-platform-rose.vercel.app/",
+    codeLink: "https://github.com/HM-Webcoding/Online-Assessment-Platform",
+    featured: false,
+    color: "#0d9488",
+    gradient: "from-teal-500/20 to-cyan-500/20",
+  },
+  {
+    id: 3,
     slug: "chatting-application",
     title: "Chatting Application",
     subtitle: "Real-time Chat App",
@@ -47,7 +61,7 @@ export const projects = [
     gradient: "from-indigo-500/20 to-purple-500/20",
   },
   {
-    id: 3,
+    id: 4,
     slug: "crud-application",
     title: "CRUD Application",
     subtitle: "Data Management",
@@ -61,7 +75,7 @@ export const projects = [
     gradient: "from-amber-500/20 to-orange-500/20",
   },
   {
-    id: 4,
+    id: 5,
     slug: "figma-pixel-perfect-agency",
     title: "Figma → Pixel Perfect",
     subtitle: "Agency Website",
@@ -75,7 +89,7 @@ export const projects = [
     gradient: "from-orange-500/20 to-red-500/20",
   },
   {
-    id: 5,
+    id: 6,
     slug: "agency-portfolio",
     title: "Agency Portfolio",
     subtitle: "Responsive Website",
