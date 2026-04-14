@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { projects } from "@/lib/data";
 import { ExternalLink, Github, Star } from "lucide-react";
+import Link from "next/link";
 
 export default function Projects() {
   const featured = projects.find((p) => p.featured);
@@ -216,6 +217,14 @@ function ProjectCard({
           </span>
         ))}
       </div>
+
+      <Link
+        href={`/project/${project.slug}`}
+        rel="noopener noreferrer"
+        className="stretched-link px-5 py-2 border border-[hsl(var(--border))] bg-transparent hover:bg-[hsl(var(--accent))] hover:text-[hsl(var(--accent-foreground))] rounded-lg text-sm font-semibold text-center mt-4 transition-all w-fit"
+      >
+        view Details
+      </Link>
     </div>
   );
 }

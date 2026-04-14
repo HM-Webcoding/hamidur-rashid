@@ -8,7 +8,7 @@ export const personal = {
   phone: "+8801867707517",
   github: "HM-Webcoding",
   linkedin: "hamidur-rashid",
-  bio: "Passionate Front-End Engineer crafting pixel-perfect, high-performance web experiences with Next.js and React. I bridge the gap between design and code — turning Figma files into living, breathing interfaces.",
+  bio: "Passionate Front-End Engineer with 2+ years of experience architecting scalable, cloud-ready applications using Next.js and TypeScript. I specialize in building modular component systems and optimizing performance for complex SaaS products. By using AI as an assistant to enhance my engineering workflow, I focus on clean architecture and high-performance system design to deliver production-grade software.",
   available: true,
   stats: [
     { value: "2+", label: "Years Exp." },

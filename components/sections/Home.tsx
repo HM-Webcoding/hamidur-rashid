@@ -32,7 +32,7 @@ export default function Home() {
             {personal.title}
           </span>
         </h1>
-        <p className="text-lg text-[hsl(var(--muted-foreground))] leading-relaxed max-w-lg font-medium">
+        <p className="text-lg text-[hsl(var(--muted-foreground))] leading-relaxed font-medium">
           {personal.bio}
         </p>
       </div>
