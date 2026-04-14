@@ -101,25 +101,25 @@ const DUMMY = {
   // Dummy media — replace src values with your real paths in /public
   media: [
     {
-      type: "image" as const,
+      type: "image",
       src: "",
       alt: "Dashboard overview",
       caption: "Main dashboard — overview of all data at a glance",
     },
     {
-      type: "image" as const,
+      type: "image",
       src: "",
       alt: "Analytics screen",
       caption: "Analytics view with interactive Recharts graphs",
     },
     {
-      type: "image" as const,
+      type: "image",
       src: "",
       alt: "Mobile responsive",
       caption: "Fully responsive layout on mobile devices",
     },
     {
-      type: "gif" as const,
+      type: "gif",
       src: "",
       alt: "Feature walkthrough",
       caption: "Live interaction demo — add yours as /public/demo.gif",
